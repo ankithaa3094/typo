@@ -1,6 +1,5 @@
 class Category < ActiveRecord::Base
   acts_as_list
-  acts_as_tree :order=>"name"
   has_many :categorizations
 
   has_many :articles,
