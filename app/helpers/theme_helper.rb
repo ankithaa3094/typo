@@ -3,7 +3,7 @@ module ThemeHelper
   def render_active_page(page)
     if controller.action_name == 'view_page'
       return 'active' if params[:name].to_s == page
-    end
+    end   
   end
 
   def render_active_home
